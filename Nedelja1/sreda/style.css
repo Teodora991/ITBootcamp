@@ -1,0 +1,141 @@
+:root {
+  --red: rgba(209, 45, 45);
+  --footer-bg: #aaa;
+  --font-default: #333;
+}
+
+*:not(hr, input) {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Tinos", serif;
+  color: var(--font-default);
+}
+
+.colored {
+  color: var(--red);
+}
+
+/* IMAGES */
+
+img {
+  width: 100%;
+  margin: 15px 0;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
+figcaption:hover {
+  color: #aaa;
+  cursor: pointer;
+}
+
+/* ***** HEADER ****** */
+
+header {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+header h2::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--red);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* NAV */
+
+nav {
+  margin: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav ul li:first-child {
+  padding-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--red);
+}
+
+/* ***** SIDEBAR ****** */
+
+aside {
+  margin: 0 30px 20px 50px;
+  width: 25%;
+  float: left;
+}
+
+/* FORM */
+
+fieldset {
+  padding: 20px 10px;
+}
+
+fieldset p {
+  margin: 0.6em 0;
+}
+
+input[type="text"],
+textarea {
+  width: 80%;
+}
+
+/* ***** MAIN SECTION ****** */
+
+main {
+  width: 65%;
+  float: left;
+  text-align: justify;
+  line-height: 1.3;
+  letter-spacing: 1.3px;
+}
+
+h1 {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+section {
+  column-count: 2;
+  column-gap: 50px;
+  margin: 15px 0;
+}
+
+section p::first-letter {
+  font-size: 35px;
+  line-height: 0.5em;
+}
+
+/* ***** FOOTER ****** */
+footer {
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--footer-bg);
+}

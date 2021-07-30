@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Zadatak 1: Sajt</title>
+  </head>
+  <body>
+    <header>
+      <h2>My First Heading</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Pages</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <h2>
+        This is <span class="colored"><i>aside</i></span> section
+      </h2>
+      <figure>
+        <img
+          src="https://www.znanje.org/i/i22/02iv09/02iv0920/mona%20liza.jpg"
+          alt="Mona Liza"
+        />
+        <figcaption><cite>The Mona Lisa</cite> by Leonardo da Vinci</figcaption>
+      </figure>
+
+      <fieldset>
+        <label class="colored" for="name">Name</label><br />
+        <input id="name" type="text" /><br />
+        <label class="colored" for="surname">Surname</label><br />
+        <input id="surname" type="text" /><br />
+        <label class="colored" for="about">About Yourself</label><br />
+        <textarea
+          name="about"
+          id="about"
+          cols="20"
+          rows="2"
+          placeholder="Some text"
+        ></textarea
+        ><br />
+        <label class="colored" for="city">City</label><br />
+        <select name="city" id="city">
+          <option value="" hidden selected disabled>--City--</option>
+          <option value="ns">NoviSad</option>
+          <option value="bg">Belgrade</option>
+        </select>
+        <hr />
+        <p class="colored">Gender</p>
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" />
+        <hr />
+        <p class="colored">Course</p>
+
+        <input type="checkbox" name="course" id="html" />
+        <label for="html">HTML</label><br />
+        <input type="checkbox" name="course" id="css" />
+        <label for="css">CSS</label><br />
+        <input type="checkbox" name="course" id="js" />
+        <label for="js">Javascript</label><br /><br />
+        <hr />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </aside>
+    <main>
+      <h1>This is main section</h1>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+      </section>
+      <figure>
+        <img src="https://i.redd.it/trdz53k13ll51.jpg" alt="Purple sky" />
+      </figure>
+
+      <section>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+          ipsum dolor sit amet.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; My first footer</p>
+    </footer>
+  </body>
+</html>
