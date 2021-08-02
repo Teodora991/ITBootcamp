@@ -36,46 +36,47 @@
         />
         <figcaption><cite>The Mona Lisa</cite> by Leonardo da Vinci</figcaption>
       </figure>
+      <form>
+        <fieldset>
+          <label class="colored" for="name">Name</label><br />
+          <input id="name" type="text" /><br />
+          <label class="colored" for="surname">Surname</label><br />
+          <input id="surname" type="text" /><br />
+          <label class="colored" for="about">About Yourself</label><br />
+          <textarea
+            name="about"
+            id="about"
+            cols="20"
+            rows="2"
+            placeholder="Some text"
+          ></textarea
+          ><br />
+          <label class="colored" for="city">City</label><br />
+          <select name="city" id="city">
+            <option value="" disabled hidden selected>--City--</option>
+            <option value="ns">NoviSad</option>
+            <option value="bg">Belgrade</option>
+          </select>
+          <hr />
+          <p class="colored">Gender</p>
 
-      <fieldset>
-        <label class="colored" for="name">Name</label><br />
-        <input id="name" type="text" /><br />
-        <label class="colored" for="surname">Surname</label><br />
-        <input id="surname" type="text" /><br />
-        <label class="colored" for="about">About Yourself</label><br />
-        <textarea
-          name="about"
-          id="about"
-          cols="20"
-          rows="2"
-          placeholder="Some text"
-        ></textarea
-        ><br />
-        <label class="colored" for="city">City</label><br />
-        <select name="city" id="city">
-          <option value="" hidden selected disabled>--City--</option>
-          <option value="ns">NoviSad</option>
-          <option value="bg">Belgrade</option>
-        </select>
-        <hr />
-        <p class="colored">Gender</p>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" />
+          <hr />
+          <p class="colored">Course</p>
 
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" />
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" />
-        <hr />
-        <p class="colored">Course</p>
-
-        <input type="checkbox" name="course" id="html" />
-        <label for="html">HTML</label><br />
-        <input type="checkbox" name="course" id="css" />
-        <label for="css">CSS</label><br />
-        <input type="checkbox" name="course" id="js" />
-        <label for="js">Javascript</label><br /><br />
-        <hr />
-        <input type="submit" value="Submit" />
-      </fieldset>
+          <input type="checkbox" name="course" id="html" />
+          <label for="html">HTML</label><br />
+          <input type="checkbox" name="course" id="css" />
+          <label for="css">CSS</label><br />
+          <input type="checkbox" name="course" id="js" />
+          <label for="js">Javascript</label><br /><br />
+          <hr />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
     </aside>
     <main>
       <h1>This is main section</h1>
