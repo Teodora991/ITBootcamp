@@ -2,8 +2,8 @@
 
 // Zadatak 1
 
-let visinaDrveta = 59; // cm
-const predjenoPoDanu = 5; // cm po danu
+let visinaDrveta = 120; // cm
+const predjenoPoDanu = 4; // cm po danu
 let ukupnoPredjeno = 0; // cm
 
 while (visinaDrveta > ukupnoPredjeno) {
