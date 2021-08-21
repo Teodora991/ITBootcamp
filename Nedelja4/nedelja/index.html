@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+          <th>Column 4</th>
+        </tr>
+      </table>
+      <button class="add-btn">+Add row</button>
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox" checked />
+      <label for="checkbox">Show calculator</label>
+    </div>
+    <div class="calculator-container">
+      <h1>Number Sum Calculator</h1>
+
+      <div class="inputs">
+        <div class="input-container">
+          <label for="number-1">First number:</label><br />
+          <input id="number-1" type="text" />
+        </div>
+        <div class="input-container">
+          <label for="number-2">Second number:</label><br />
+          <input id="number-2" type="text" />
+        </div>
+        <div class="result"></div>
+      </div>
+      <button type="submit" class="calc-btn">
+        <img src="./images/calculator.png" />
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
