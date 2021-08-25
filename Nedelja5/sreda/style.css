@@ -1,0 +1,17 @@
+body {
+  width: 100vw;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.users {
+  margin-top: 5%;
+}
