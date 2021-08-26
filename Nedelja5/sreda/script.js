@@ -10,6 +10,8 @@ const city = document.getElementById("cities");
 const createdBox = document.getElementById("user-created-msg");
 const defaultCity = document.getElementById("default");
 const usersContainer = document.getElementById("users-list");
+const submitBtn = document.getElementById("submit");
+let courses;
 
 const users = [];
 
@@ -17,14 +19,13 @@ const resetInput = () => {
   firstName.value = lastName.value = password.value = password2.value = "";
   const maleRadio = document.querySelector("#male");
   maleRadio.checked = true;
-  const courses = document.querySelectorAll('input[type="checkbox"]:checked');
   [...courses].forEach((course) => (course.checked = false));
   defaultCity.selected = true;
 };
 
 const isTrimmed = (txt) => {
   const trimmed = txt.trim().toLowerCase();
-  return trimmed[0].toUpperCase() + trimmed.slice(1);
+  return trimmed.slice(0, 1).toUpperCase() + trimmed.slice(1);
 };
 
 const displayUserCreatedMsg = (user) => {
@@ -69,7 +70,7 @@ const isFilled = (element) => {
 };
 
 const isCourseChecked = () => {
-  const courses = document.querySelectorAll('input[type="checkbox"]:checked');
+  courses = document.querySelectorAll('input[type="checkbox"]:checked');
   if (!courses.length) {
     displayErrorMsg(checkboxContainer, "You must choose course.");
     return false;
@@ -91,11 +92,10 @@ const isValid = () => {
 };
 
 const createUser = (event) => {
-  const courses = document.querySelectorAll('input[type="checkbox"]:checked');
+  event.preventDefault();
   const gender = document.querySelector("input[type='radio']:checked");
   const firstNameTrimmed = isTrimmed(firstName.value);
 
-  event.preventDefault();
   if (isValid()) {
     const user = {
       firstName: firstNameTrimmed,
@@ -106,14 +106,11 @@ const createUser = (event) => {
       password: password.value,
     };
     users.push(user);
-    console.log(user);
     renderUser(user);
     displayUserCreatedMsg(firstNameTrimmed);
     resetInput();
   }
 };
-
-form.addEventListener("submit", createUser);
 
 const firstNameValidation = (fName) => {
   const fNameValidator = /\w{5,15}/;
@@ -166,3 +163,5 @@ const passwordConfValidation = (pwd1, pwd2) => {
   cleanMsg(pwd2);
   return true;
 };
+
+form.addEventListener("submit", createUser);
