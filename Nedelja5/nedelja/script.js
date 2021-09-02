@@ -16,7 +16,8 @@ const renderItem = (element) => {
   );
   const buttonDel = document.createElement("button");
   buttonDel.classList.add("delete-btn");
-  buttonDel.innerHTML = '<i class="fas fa-trash icon"></i>';
+  buttonDel.setAttribute("title", "Delete");
+  buttonDel.innerHTML = '<i class="fas fa-times icon"></i>';
   label.append(buttonDel);
   todoContainer.append(label);
 
