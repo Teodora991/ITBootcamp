@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script defer src="actions.js" type="module"></script>
+    <script defer src="script.js" type="module"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>BudgetMaster</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-text">
+        <div class="budget-label">
+          Dostupan budžet u Septembru 2021:
+          <div class="budget"></div>
+        </div>
+        <table class="total-movements">
+          <tr class="total-incomes row">
+            <td>PRIHOD</td>
+            <td class="amount"></td>
+            <td></td>
+          </tr>
+          <tr class="total-expenses row">
+            <td>RASHOD</td>
+            <td class="amount"></td>
+            <td><div class="percent"></div></td>
+          </tr>
+        </table>
+      </div>
+    </header>
+
+    <form id="form" autocomplete="off">
+      <select name="" id="movement-type" class="input">
+        <option value="0" selected disabled hidden>-</option>
+        <option value="income">Prihod</option>
+        <option value="expense">Rashod</option>
+      </select>
+      <div class="description-wrapper">
+        <input
+          type="text"
+          placeholder="Opis"
+          class="input"
+          id="movement-description"
+        />
+        <div class="error-msg"></div>
+      </div>
+
+      <div class="amount-wrapper">
+        <input
+          type="text"
+          placeholder="Iznos"
+          class="input"
+          id="movement-amount"
+        />
+        <div class="error-msg"></div>
+      </div>
+
+      <button class="btn input">
+        <i class="far fa-check-circle fa-2x"></i>
+      </button>
+    </form>
+    <div class="wrapper">
+      <div class="incomes-wrapper inner">
+        <h3 class="income-heading">PRIHODI</h3>
+        <table class="income-list" cellspacing="0"></table>
+      </div>
+
+      <div class="expenses-wrapper inner">
+        <h3 class="expense-heading">RASHODI</h3>
+        <table cellspacing="0" class="expense-list"></table>
+      </div>
+    </div>
+  </body>
+</html>
